@@ -16,6 +16,14 @@ public class App {
         System.out.println(miPerro.getNombre());
         System.out.println("Edad: " + miGato.getEdad());
         System.out.println(miCaballo.getTipoDeCaballo());
+        System.out.println(veterinaria.toString());
+        miCaballo.comunicar();
+
+        veterinaria.agregarAnimal(miCaballo);
+        veterinaria.agregarAnimal(miGato);
+        veterinaria.agregarAnimal(miPerro);
+
+        veterinaria.mostrarAnimales();
     }
     
 }

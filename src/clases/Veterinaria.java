@@ -39,9 +39,31 @@ public class Veterinaria {
         this.telefono = telefono;
     }
 
+    
+
     @Override
     public String toString() {
         return "Veterinaria [nombre=" + nombre + ", direccion=" + direccion + ", telefono=" + telefono + "]";
+    }
+
+    public void agregarAnimal(Animal animal) {
+        animales.add(animal);
+    }
+
+    public void mostrarAnimales() {
+        for (Animal animal : animales) {
+            System.out.println(animal.getNombre() + " - " + animal.getEdad() + " anios - " + animal.getPeso() + " kg");
+        }
+
+        this.animales.forEach(x -> System.out.println(x));
+    }
+
+    public List<Animal> getAnimales() {
+        return animales;
+    }
+
+    public void setAnimales(List<Animal> animales) {
+        this.animales = animales;
     }
     
     

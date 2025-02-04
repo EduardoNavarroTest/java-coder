@@ -38,4 +38,13 @@ public abstract class Animal {
         this.peso = peso;
     }
 
+    public abstract void comunicar();
+
+    @Override
+    public String toString() {
+        return "Animal [nombre=" + nombre + ", edad=" + edad + ", peso=" + peso + "]";
+    }
+
+    
+
 }

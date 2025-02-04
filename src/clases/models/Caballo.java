@@ -19,4 +19,8 @@ public class Caballo extends Animal {
         this.tipoDeCaballo = tipoDeCaballo;
     }
 
+    public void comunicar() {
+        System.out.println("Estoy caballeteando");
+    }
+
 }

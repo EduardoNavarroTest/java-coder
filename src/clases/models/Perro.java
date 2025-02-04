@@ -17,6 +17,14 @@ public class Perro extends Animal {
 
     public void setRaza(Raza raza) {
         this.raza = raza;
-    }   
+    }
+    
+    public String getNombre() {
+            return "Soy un perrito y mi nombre es " + super.nombre;     
+    }
+    
+    public void comunicar() {
+        System.out.println("Guau Guau");
+    }
      
 }

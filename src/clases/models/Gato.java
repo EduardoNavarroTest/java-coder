@@ -19,5 +19,9 @@ public class Gato extends Animal {
         this.raza = raza;
     }
 
+    public void comunicar() {
+        System.out.println("Miau Miau");
+    }
+
     
 }
